@@ -19,13 +19,13 @@ export default function Navigation() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <Link href="/about" className="text-muted-foreground hover:text-foreground transition-colors">
+            <Link href="/about" className="text-foreground hover:text-foreground transition-colors">
               About
             </Link>
-            <Link href="/services" className="text-muted-foreground hover:text-foreground transition-colors">
+            <Link href="/services" className="text-foreground hover:text-foreground transition-colors">
               Services
             </Link>
-            <Link href="/process" className="text-muted-foreground hover:text-foreground transition-colors">
+            <Link href="/process" className="text-foreground hover:text-foreground transition-colors">
               Process
             </Link>
 
@@ -38,10 +38,10 @@ export default function Navigation() {
             </Link>
 
 */}
-            <Link href="/partners" className="text-muted-foreground hover:text-foreground transition-colors">
+            <Link href="/partners" className="text-foreground hover:text-foreground transition-colors">
               Partners
             </Link>
-            <Link href="/contact" className="text-muted-foreground hover:text-foreground transition-colors">
+            <Link href="/contact" className="text-foreground hover:text-foreground transition-colors">
               Contact
             </Link>
           </div>

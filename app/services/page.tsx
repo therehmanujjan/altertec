@@ -20,7 +20,7 @@ export default function ServicesPage() {
             <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6 text-balance">
               AI Services That Drive Results
             </h1>
-            <p className="text-xl text-muted-foreground mb-8 text-pretty">
+            <p className="text-xl text-foreground mb-8 text-pretty">
               At Altertec AI, we provide end-to-end services that empower SMEs to adopt and scale AI. From automation to
               custom SaaS solutions, our team ensures every implementation is ROI-driven and strategy-first.
             </p>
@@ -33,7 +33,7 @@ export default function ServicesPage() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Our Services</h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-pretty">
+            <p className="text-lg text-foreground max-w-2xl mx-auto text-pretty">
               Comprehensive AI solutions tailored to your business needs and growth objectives.
             </p>
           </div>
@@ -74,7 +74,7 @@ export default function ServicesPage() {
                   </div>
                 </div>
                 <div className="pt-4">
-                  <p className="text-sm text-muted-foreground mb-2">Typical outcomes:</p>
+                  <p className="text-sm text-foreground mb-2">Typical outcomes:</p>
                   <p className="text-sm font-medium">$50K+ in identified savings opportunities</p>
                 </div>
               </CardContent>
@@ -108,7 +108,7 @@ export default function ServicesPage() {
                   </div>
                 </div>
                 <div className="pt-4">
-                  <p className="text-sm text-muted-foreground mb-2">Typical outcomes:</p>
+                  <p className="text-sm text-foreground mb-2">Typical outcomes:</p>
                   <p className="text-sm font-medium">200+ hours saved per quarter</p>
                 </div>
               </CardContent>
@@ -142,7 +142,7 @@ export default function ServicesPage() {
                   </div>
                 </div>
                 <div className="pt-4">
-                  <p className="text-sm text-muted-foreground mb-2">Typical outcomes:</p>
+                  <p className="text-sm text-foreground mb-2">Typical outcomes:</p>
                   <p className="text-sm font-medium">60% reduction in support tickets</p>
                 </div>
               </CardContent>
@@ -176,7 +176,7 @@ export default function ServicesPage() {
                   </div>
                 </div>
                 <div className="pt-4">
-                  <p className="text-sm text-muted-foreground mb-2">Typical outcomes:</p>
+                  <p className="text-sm text-foreground mb-2">Typical outcomes:</p>
                   <p className="text-sm font-medium">Custom solutions that scale with growth</p>
                 </div>
               </CardContent>
@@ -210,7 +210,7 @@ export default function ServicesPage() {
                   </div>
                 </div>
                 <div className="pt-4">
-                  <p className="text-sm text-muted-foreground mb-2">Typical outcomes:</p>
+                  <p className="text-sm text-foreground mb-2">Typical outcomes:</p>
                   <p className="text-sm font-medium">Empowered teams with AI capabilities</p>
                 </div>
               </CardContent>
@@ -244,7 +244,7 @@ export default function ServicesPage() {
                   </div>
                 </div>
                 <div className="pt-4">
-                  <p className="text-sm text-muted-foreground mb-2">Typical outcomes:</p>
+                  <p className="text-sm text-foreground mb-2">Typical outcomes:</p>
                   <p className="text-sm font-medium">Continuous ROI improvement</p>
                 </div>
               </CardContent>
@@ -264,7 +264,7 @@ export default function ServicesPage() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">How We Deliver Results</h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-pretty">
+            <p className="text-lg text-foreground max-w-2xl mx-auto text-pretty">
               Our proven methodology ensures successful AI implementation with measurable outcomes.
             </p>
           </div>
@@ -275,7 +275,7 @@ export default function ServicesPage() {
                 <span className="text-primary-foreground font-bold text-xl">1</span>
               </div>
               <h3 className="text-lg font-semibold mb-2">Discovery & Analysis</h3>
-              <p className="text-muted-foreground text-sm">
+              <p className="text-foreground text-sm">
                 Deep dive into your business processes and identify AI opportunities.
               </p>
             </div>
@@ -284,7 +284,7 @@ export default function ServicesPage() {
                 <span className="text-primary-foreground font-bold text-xl">2</span>
               </div>
               <h3 className="text-lg font-semibold mb-2">Strategy & Planning</h3>
-              <p className="text-muted-foreground text-sm">
+              <p className="text-foreground text-sm">
                 Create detailed implementation roadmap with clear milestones and ROI projections.
               </p>
             </div>
@@ -293,7 +293,7 @@ export default function ServicesPage() {
                 <span className="text-primary-foreground font-bold text-xl">3</span>
               </div>
               <h3 className="text-lg font-semibold mb-2">Implementation</h3>
-              <p className="text-muted-foreground text-sm">
+              <p className="text-foreground text-sm">
                 Build and deploy AI solutions with minimal disruption to your operations.
               </p>
             </div>
@@ -302,7 +302,7 @@ export default function ServicesPage() {
                 <span className="text-primary-foreground font-bold text-xl">4</span>
               </div>
               <h3 className="text-lg font-semibold mb-2">Optimize & Scale</h3>
-              <p className="text-muted-foreground text-sm">
+              <p className="text-foreground text-sm">
                 Continuous monitoring, optimization, and scaling for maximum impact.
               </p>
             </div>
@@ -315,7 +315,7 @@ export default function ServicesPage() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Ready to Get Started?</h2>
-            <p className="text-lg text-muted-foreground mb-8 text-pretty">
+            <p className="text-lg text-foreground mb-8 text-pretty">
               Let's identify the AI opportunities in your business. Book your free audit to discover potential savings
               and growth opportunities.
             </p>
@@ -341,8 +341,8 @@ export default function ServicesPage() {
             <Link href="/" className="inline-block hover:opacity-80 transition-opacity mb-4">
               <img src="/logo1.png" alt="Altertec AI" className="h-8 w-auto mx-auto" />
             </Link>
-            <p className="text-muted-foreground mb-4">AI Transformation for SMEs</p>
-            <p className="text-sm text-muted-foreground">© 2024 Altertec AI. All rights reserved.</p>
+            <p className="text-foreground mb-4">AI Transformation for SMEs</p>
+            <p className="text-sm text-foreground">© 2024 Altertec AI. All rights reserved.</p>
           </div>
         </div>
       </footer>

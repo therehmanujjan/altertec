@@ -59,7 +59,7 @@ const FeaturedAgent = () => {
           <div className="flex gap-2">
             <h1 className="text-3xl md:text-4xl text-center mx-auto font-extrabold">Featured AI Agents</h1>
           </div>
-          <p className="mt-4 max-w-screen-sm text-base text-center mx-auto text-muted-foreground">
+          <p className="mt-4 max-w-screen-sm text-base text-center mx-auto text-foreground">
             Explore powerful AI agents that enhance your key features. Automate tasks, optimize workflows, and improve
             user experiences. Designed to adapt and evolve with your specific needs.
           </p>
@@ -72,7 +72,7 @@ const FeaturedAgent = () => {
           >
             <h4 className="text-primary font-medium mt-6 lg:mt-0">Specialized AI Agents</h4>
             <h2 className="font-bold text-foreground text-2xl">{selecteditemdata?.header}</h2>
-            <p className="text-base mt-3 text-muted-foreground">{selecteditemdata?.desc}</p>
+            <p className="text-base mt-3 text-foreground">{selecteditemdata?.desc}</p>
             <Link href="/contact">
               <button className="text-xl mt-8 px-6 py-3 bg-primary text-primary-foreground rounded-full hover:bg-primary/90 transition-all duration-300 flex items-center gap-x-2">
                 View Details

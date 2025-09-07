@@ -22,10 +22,10 @@ export default function HomePage() {
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6 text-balance animate-fade-in-up">
               AI Transformation for SMEs
             </h1>
-            <p className="text-xl md:text-2xl text-muted-foreground mb-8 text-balance animate-fade-in-up animation-delay-200">
+            <p className="text-xl md:text-2xl text-foreground mb-8 text-balance animate-fade-in-up animation-delay-200">
               Strategy. Automation. Results.
             </p>
-            <p className="text-lg text-muted-foreground mb-10 max-w-2xl mx-auto text-pretty animate-fade-in-up animation-delay-400">
+            <p className="text-lg text-foreground mb-10 max-w-2xl mx-auto text-pretty animate-fade-in-up animation-delay-400">
               Altertec AI helps small and medium-sized businesses move beyond the hype of AI into real, measurable
               transformation. From workflow automation to custom AI products, we design solutions that save time, cut
               costs, and drive growth.
@@ -62,7 +62,7 @@ export default function HomePage() {
                 <CardTitle>ROI-driven implementation</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground">
+                <p className="text-foreground">
                   Every solution is designed to deliver measurable returns on your investment.
                 </p>
               </CardContent>
@@ -73,7 +73,7 @@ export default function HomePage() {
                 <CardTitle>Simple adoption process</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground">
+                <p className="text-foreground">
                   We make AI implementation straightforward and accessible for your team.
                 </p>
               </CardContent>
@@ -84,7 +84,7 @@ export default function HomePage() {
                 <CardTitle>Long-term strategic partnership</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground">
+                <p className="text-foreground">
                   We're committed to your ongoing success with continuous support and optimization.
                 </p>
               </CardContent>
@@ -103,7 +103,7 @@ export default function HomePage() {
               Your AI Transformation Partner
             </h2>
             <div className="prose prose-lg max-w-none text-center">
-              <p className="text-lg text-muted-foreground mb-8 text-pretty">
+              <p className="text-lg text-foreground mb-8 text-pretty">
                 Altertec AI bridges the gap between AI's potential and SMEs' real needs. We combine consulting,
                 implementation, and training into one partnership. Our mission: make AI adoption simple, profitable, and
                 scalable for growing businesses worldwide.
@@ -127,7 +127,7 @@ export default function HomePage() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Our Services</h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-pretty">
+            <p className="text-lg text-foreground max-w-2xl mx-auto text-pretty">
               At Altertec AI, we provide end-to-end services that empower SMEs to adopt and scale AI. From automation to
               custom SaaS solutions, our team ensures every implementation is ROI-driven and strategy-first.
             </p>
@@ -220,28 +220,28 @@ export default function HomePage() {
                 <span className="text-primary-foreground font-bold text-xl">1</span>
               </div>
               <h3 className="text-xl font-semibold mb-2">Discovery Call</h3>
-              <p className="text-muted-foreground">Understand your goals</p>
+              <p className="text-foreground">Understand your goals</p>
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-primary-foreground font-bold text-xl">2</span>
               </div>
               <h3 className="text-xl font-semibold mb-2">AI Audit & Mapping</h3>
-              <p className="text-muted-foreground">Identify automation opportunities</p>
+              <p className="text-foreground">Identify automation opportunities</p>
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-primary-foreground font-bold text-xl">3</span>
               </div>
               <h3 className="text-xl font-semibold mb-2">Implementation Roadmap</h3>
-              <p className="text-muted-foreground">Design a prioritized ROI-first plan</p>
+              <p className="text-foreground">Design a prioritized ROI-first plan</p>
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-primary-foreground font-bold text-xl">4</span>
               </div>
               <h3 className="text-xl font-semibold mb-2">Build, Deploy, Optimize</h3>
-              <p className="text-muted-foreground">Deliver solutions and improve continuously</p>
+              <p className="text-foreground">Deliver solutions and improve continuously</p>
             </div>
           </div>
           <div className="text-center mt-12">
@@ -257,7 +257,7 @@ export default function HomePage() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-8">Why Now Is the Time to Adopt AI</h2>
-            <p className="text-lg text-muted-foreground mb-12 text-pretty">
+            <p className="text-lg text-foreground mb-12 text-pretty">
               AI adoption among SMEs is growing at 40% year over year. Early adopters gain a clear competitive
               advantage: reduced costs, smarter operations, and scalability with fewer resources.
             </p>
@@ -301,7 +301,7 @@ export default function HomePage() {
                 <Badge variant="secondary">250+ Hours Saved</Badge>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground mb-4">Saved 250+ hours per quarter via automated onboarding</p>
+                <p className="text-foreground mb-4">Saved 250+ hours per quarter via automated onboarding</p>
                 <div className="text-sm text-primary font-medium">ROI: 340% in first year</div>
               </CardContent>
             </Card>
@@ -311,7 +311,7 @@ export default function HomePage() {
                 <Badge variant="secondary">$60K Savings Found</Badge>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground mb-4">Discovered $60K in hidden savings with AI audit</p>
+                <p className="text-foreground mb-4">Discovered $60K in hidden savings with AI audit</p>
                 <div className="text-sm text-primary font-medium">ROI: 280% in first year</div>
               </CardContent>
             </Card>
@@ -329,7 +329,7 @@ export default function HomePage() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Our Partners in Transformation</h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-pretty">
+            <p className="text-lg text-foreground max-w-2xl mx-auto text-pretty">
               We collaborate with industry-leading AI platforms and tool providers to deliver scalable solutions.
             </p>
           </div>
@@ -363,7 +363,7 @@ export default function HomePage() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Let's Find Your First AI Win</h2>
-            <p className="text-lg text-muted-foreground mb-12 text-pretty">
+            <p className="text-lg text-foreground mb-12 text-pretty">
               Ready to explore AI transformation for your business? Contact us today to book your free audit.
             </p>
             <Card>
@@ -421,13 +421,13 @@ export default function HomePage() {
                   </Button>
                 </form>
                 <div className="mt-8 pt-8 border-t border-border text-center">
-                  <p className="text-sm text-muted-foreground mb-2">Contact us directly:</p>
+                  <p className="text-sm text-foreground mb-2">Contact us directly:</p>
                   <p className="text-sm text-foreground">team@altertec.ai</p>
                   <div className="flex justify-center space-x-4 mt-4">
-                    <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
+                    <Link href="#" className="text-foreground hover:text-primary transition-colors">
                       LinkedIn
                     </Link>
-                    <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
+                    <Link href="#" className="text-foreground hover:text-primary transition-colors">
                       Website
                     </Link>
                   </div>
@@ -445,8 +445,8 @@ export default function HomePage() {
             <Link href="/" className="inline-block hover:opacity-80 transition-opacity mb-4">
               <img src="/logo1.png" alt="Altertec AI" className="h-8 w-auto mx-auto" />
             </Link>
-            <p className="text-muted-foreground mb-4">AI Transformation for SMEs</p>
-            <p className="text-sm text-muted-foreground">© 2024 Altertec AI. All rights reserved.</p>
+            <p className="text-foreground mb-4">AI Transformation for SMEs</p>
+            <p className="text-sm text-foreground">© 2024 Altertec AI. All rights reserved.</p>
           </div>
         </div>
       </footer>
