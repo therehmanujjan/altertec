@@ -65,6 +65,13 @@ export default function Navigation() {
           <div className="md:hidden py-4 border-t border-border">
             <div className="flex flex-col space-y-4">
               <Link
+                href="/"
+                className="text-muted-foreground hover:text-foreground transition-colors"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Home
+              </Link>
+              <Link
                 href="/about"
                 className="text-muted-foreground hover:text-foreground transition-colors"
                 onClick={() => setIsMenuOpen(false)}
