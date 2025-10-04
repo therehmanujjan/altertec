@@ -1,17 +1,15 @@
-"use client";
-
-import * as React from "react";
-import { motion } from "framer-motion";
+"use client"
+import { motion } from "framer-motion"
 
 import LogoLoop from "@/components/logo-loop"
-import { SiReact, SiNextdotjs, SiTypescript, SiTailwindcss } from 'react-icons/si';
+import { SiReact, SiNextdotjs, SiTypescript, SiTailwindcss } from "react-icons/si"
 
 const techLogos = [
   { node: <SiReact />, title: "React", href: "https://react.dev" },
   { node: <SiNextdotjs />, title: "Next.js", href: "https://nextjs.org" },
   { node: <SiTypescript />, title: "TypeScript", href: "https://www.typescriptlang.org" },
   { node: <SiTailwindcss />, title: "Tailwind CSS", href: "https://tailwindcss.com" },
-];
+]
 
 /**
  * Altertec AI – SalesRocket-style Hero (TypeScript + React)
@@ -21,7 +19,7 @@ const techLogos = [
  */
 
 interface AltertecHeroProps {
-  logoSrc?: string; // defaults to "/logo1.png"
+  logoSrc?: string // defaults to "/logo1.png"
 }
 
 const containerVariants = {
@@ -31,89 +29,50 @@ const containerVariants = {
     y: 0,
     transition: { duration: 0.6, when: "beforeChildren", staggerChildren: 0.12 },
   },
-};
+}
 
 const fadeUp = {
   hidden: { opacity: 0, y: 20 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.7 } },
-};
+}
 
 const fadeUpSofter = {
   hidden: { opacity: 0, y: 16 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
-};
+}
 
 const chipInView = {
   hidden: { opacity: 0, y: 12 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
-};
+}
 
 export default function AltertecHero({ logoSrc = "/logo1.png" }: AltertecHeroProps) {
   return (
-    <section
-      id="hero"
-      className="relative overflow-hidden bg-black text-white"
-      aria-labelledby="hero-heading"
-    >
-      {/* Subtle red circuit-node motif background */}
-      <svg
+    <section id="hero" className="relative overflow-hidden bg-black text-white" aria-labelledby="hero-heading">
+      {/* Full-bleed background video */}
+      <video
+        className="absolute inset-0 h-full w-full object-cover"
+        src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/AltertecAI_HERO-rltyZTdBqlONT7JXqalPKGhGLCaCAd.mp4"
+        autoPlay
+        muted
+        loop
+        playsInline
+        preload="metadata"
         aria-hidden="true"
-        className="pointer-events-none absolute -top-32 -right-32 h-[48rem] w-[48rem] opacity-20"
-        viewBox="0 0 800 800"
-        fill="none"
-      >
-        <defs>
-          <radialGradient
-            id="g"
-            cx="0"
-            cy="0"
-            r="1"
-            gradientUnits="userSpaceOnUse"
-            gradientTransform="translate(400 400) rotate(90) scale(400)"
-          >
-            <stop stopColor="#E60000" stopOpacity="0.45" />
-            <stop offset="1" stopColor="#E60000" stopOpacity="0" />
-          </radialGradient>
-        </defs>
-        <circle cx="400" cy="400" r="400" fill="url(#g)" />
-        {Array.from({ length: 22 }).map((_, i) => (
-          <circle
-            key={i}
-            cx={50 + i * 32}
-            cy={(i * 53) % 700 + 50}
-            r={3}
-            fill="#E60000"
-          />
-        ))}
-      </svg>
-
-      {/* Watermark logo */}
-      <img
-        src={logoSrc}
-        alt="Altertec AI watermark"
-        className="pointer-events-none absolute -left-24 bottom-0 h-80 w-80 select-none opacity-10 blur-[1px]"
       />
 
+      {/* Global dim overlay for readability over video */}
+      <div className="absolute inset-0 bg-black/55" aria-hidden="true" />
+
       <div className="mx-auto grid max-w-7xl grid-cols-1 gap-10 px-6 py-20 md:grid-cols-2 md:py-28 lg:gap-16 lg:px-8">
-        {/* Copy column */}
-        <motion.div
-          variants={containerVariants}
-          initial="hidden"
-          animate="visible"
-          className="relative z-10"
-        >
+        {/* Copy column remains above video */}
+        <motion.div variants={containerVariants} initial="hidden" animate="visible" className="relative z-10">
           {/* Eyebrow */}
           <motion.span
             variants={fadeUpSofter}
             className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-[12px] uppercase tracking-wide text-white/80"
           >
-            <svg
-              width="14"
-              height="14"
-              viewBox="0 0 24 24"
-              fill="none"
-              aria-hidden="true"
-            >
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true">
               <path
                 d="M12 2l2.39 4.84L20 8l-4 3.9.95 5.53L12 15.77 7.05 17.43 8 13 4 9l5.61-.16L12 2z"
                 fill="currentColor"
@@ -138,17 +97,13 @@ export default function AltertecHero({ logoSrc = "/logo1.png" }: AltertecHeroPro
             variants={fadeUpSofter}
             className="mt-5 max-w-2xl text-base leading-relaxed text-white/80 md:text-lg"
           >
-            Altertec AI helps small and medium-sized businesses move beyond the
-            hype of AI into real, measurable transformation. From workflow
-            automation to custom AI products, we design solutions that save
-            time, cut costs, and drive growth.
+            Altertec AI helps small and medium-sized businesses move beyond the hype of AI into real, measurable
+            transformation. From workflow automation to custom AI products, we design solutions that save time, cut
+            costs, and drive growth.
           </motion.p>
 
           {/* CTA row */}
-          <motion.div
-            variants={fadeUpSofter}
-            className="mt-8 flex flex-wrap items-center gap-3"
-          >
+          <motion.div variants={fadeUpSofter} className="mt-8 flex flex-wrap items-center gap-3">
             <motion.a
               href="/contact"
               aria-label="Book your free AI audit"
@@ -185,7 +140,7 @@ export default function AltertecHero({ logoSrc = "/logo1.png" }: AltertecHeroPro
               ].map((src, i) => (
                 <img
                   key={i}
-                  src={src}
+                  src={src || "/placeholder.svg"}
                   alt="User avatar"
                   className="h-7 w-7 rounded-full ring-2 ring-black object-cover"
                 />
@@ -205,11 +160,7 @@ export default function AltertecHero({ logoSrc = "/logo1.png" }: AltertecHeroPro
             <span className="text-xs uppercase tracking-wider">Trusted by</span>
             <div className="flex items-center gap-4 opacity-80">
               {Array.from({ length: 4 }).map((_, i) => (
-                <div
-                  key={i}
-                  className="h-6 w-24 rounded bg-white/5"
-                  aria-hidden="true"
-                />
+                <div key={i} className="h-6 w-24 rounded bg-white/5" aria-hidden="true" />
               ))}
             </div>
           </motion.div>
@@ -223,29 +174,26 @@ export default function AltertecHero({ logoSrc = "/logo1.png" }: AltertecHeroPro
           className="relative h-auto"
         >
           <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-2xl">
-            <img
-              src="/logo1.png"
-              alt="Hero visual"
-              className="h-fit w-full object-cover mt-32"
-            />
+            <img src="/logo1.png" alt="Hero visual" className="h-fit w-full object-cover mt-32" />
             <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/40 via-black/10 to-transparent" />
           </div>
         </motion.div>
       </div>
-     <div style={{ height: '150px', position: 'relative', overflow: 'hidden'}}>
-      <LogoLoop
-        logos={techLogos}
-        speed={120}
-        direction="left"
-        logoHeight={48}
-        gap={40}
-        pauseOnHover
-        scaleOnHover
-        fadeOut
-        fadeOutColor="#ffffff"
-        ariaLabel="Technology partners"
-      />
-    </div>
+
+      <div style={{ height: "150px", position: "relative", overflow: "hidden" }}>
+        <LogoLoop
+          logos={techLogos}
+          speed={120}
+          direction="left"
+          logoHeight={48}
+          gap={40}
+          pauseOnHover
+          scaleOnHover
+          fadeOut
+          fadeOutColor="#ffffff"
+          ariaLabel="Technology partners"
+        />
+      </div>
     </section>
-  );
+  )
 }
