@@ -38,6 +38,7 @@ export default function Navigation() {
             </Link>
 
 */}
+
             <Link href="/partners" className="text-foreground hover:text-foreground transition-colors">
               Partners
             </Link>
@@ -47,9 +48,10 @@ export default function Navigation() {
           </div>
 
           <div className="flex items-center space-x-4">
+          {/*
             <ThemeToggle />
-
-            <Button asChild className="hidden sm:inline-flex">
+*/}
+            <Button asChild className="hidden sm:inline-flex bg-foreground/5">
               <Link href="/contact">Book Free AI Audit</Link>
             </Button>
 
@@ -130,11 +132,12 @@ export default function Navigation() {
                   Book Free AI Audit
                 </Link>
               </Button>
-
+{/* hide for temp 
               <div className="flex items-center justify-between pt-2">
                 <span className="text-muted-foreground">Theme</span>
                 <ThemeToggle />
               </div>
+              */}
             </div>
           </div>
         )}

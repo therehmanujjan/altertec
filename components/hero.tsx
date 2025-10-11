@@ -84,7 +84,7 @@ export default function AltertecHero({ logoSrc = "/logo1.png" }: AltertecHeroPro
           </span>
         </h1>
 
-        <p className="text-5xl mb-12 max-w-3xl mx-auto leading-relaxed">Strategy. Automation. Results</p>
+        <p className="text-3xl mb-12 max-w-3xl mx-auto leading-relaxed">Strategy. Automation. Results</p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           {/* Update CTA to navigate to /process instead of scrolling */}

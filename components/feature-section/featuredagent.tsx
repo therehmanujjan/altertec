@@ -74,7 +74,7 @@ const FeaturedAgent = () => {
             <h2 className="font-bold text-foreground text-2xl">{selecteditemdata?.header}</h2>
             <p className="text-base mt-3 text-foreground">{selecteditemdata?.desc}</p>
             <Link href="/contact">
-              <button className="text-xl mt-8 px-6 py-3 bg-[#2e0409] text-primary-foreground rounded-full hover:bg-primary/90 transition-all duration-300 flex items-center gap-x-2">
+              <button className="text-xl mt-8 px-6 py-3 bg-[#2e0409] text-white-foreground rounded-full hover:bg-white/90 transition-all duration-300 flex items-center gap-x-2">
                 View Details
                 <ArrowRight className="text-lg" />
               </button>
@@ -86,7 +86,7 @@ const FeaturedAgent = () => {
               <div
                 onClick={() => handleSelectItem(item.slug)}
                 className={`flex gap-x-4 cursor-pointer items-center p-3 rounded-md transition-all duration-200 hover:bg-muted ${
-                  selecteditem === item.slug ? "bg-muted border border-primary" : ""
+                  selecteditem === item.slug ? "bg-muted border border-white" : ""
                 }`}
                 key={item.slug}
               >
@@ -100,7 +100,7 @@ const FeaturedAgent = () => {
                   />
                 </div>
                 <div>
-                  <h4 className="text-primary font-medium text-sm">Specialized AI Agents</h4>
+                  <h4 className="text-white font-medium text-sm">Specialized AI Agents</h4>
                   <h3 className="font-bold text-sm text-foreground">{item.header}</h3>
                 </div>
               </div>

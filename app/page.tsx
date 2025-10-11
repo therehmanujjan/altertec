@@ -148,8 +148,8 @@ export default function HomePage() {
             </Card>
           </div>
           <div className="text-center mt-12 ">
-            <Button asChild>
-              <Link href="/case-studies">Explore Case Studies</Link>
+            <Button asChild className="bg-foreground/5 hover:bg-foreground/5">
+              <Link href="/case-studies" >Explore Case Studies</Link>
             </Button>
           </div>
         </div>
@@ -176,7 +176,7 @@ export default function HomePage() {
                       <input
                         id="name"
                         type="text"
-                        className="w-full px-3 py-2 border border-border rounded-md bg-input text-foreground focus:outline-none focus:ring-2 focus:ring-ring"
+                        className="w-full px-3 py-2 border border-white rounded-md bg-foreground/5 text-white "
                         required
                       />
                     </div>
@@ -187,7 +187,7 @@ export default function HomePage() {
                       <input
                         id="company"
                         type="text"
-                        className="w-full px-3 py-2 border border-border rounded-md bg-input text-foreground focus:outline-none focus:ring-2 focus:ring-ring"
+                        className="w-full px-3 py-2 border border-white rounded-md bg-foreground/5 text-white"
                         required
                       />
                     </div>
@@ -199,7 +199,7 @@ export default function HomePage() {
                     <input
                       id="email"
                       type="email"
-                      className="w-full px-3 py-2 border border-border rounded-md bg-input text-foreground focus:outline-none focus:ring-2 focus:ring-ring"
+                      className="w-full px-3 py-2 border border-white rounded-md bg-foreground/5 text-white"
                       required
                     />
                   </div>
@@ -210,11 +210,11 @@ export default function HomePage() {
                     <textarea
                       id="message"
                       rows={4}
-                      className="w-full px-3 py-2 border border-border rounded-md bg-input text-foreground focus:outline-none focus:ring-2 focus:ring-ring"
+                      className="w-full px-3 py-2 border border-white rounded-md bg-foreground/5 text-white"
                       placeholder="Tell us about your business and AI goals..."
                     />
                   </div>
-                  <Button type="submit" size="lg" className="w-full">
+                  <Button type="submit" size="lg" className="w-full bg-[#2e0409] hover:bg-white hover:text-[#2e0409] ">
                     Book Free AI Audit
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
