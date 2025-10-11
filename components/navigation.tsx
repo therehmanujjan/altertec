@@ -125,7 +125,7 @@ export default function Navigation() {
               >
                 Contact
               </Link>
-              <Button asChild className="w-full sm:hidden">
+              <Button asChild className="w-full sm:hidden ">
                 <Link href="/contact" onClick={() => setIsMenuOpen(false)}>
                   Book Free AI Audit
                 </Link>

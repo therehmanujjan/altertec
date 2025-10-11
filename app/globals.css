@@ -5,9 +5,8 @@
 
 :root {
   /* Updated color tokens to match Altertec AI brand colors */
-  /*--background: oklch(1 0 0); /* White */
-  --background: oklch(1 0 0); /* White */
-  --foreground: oklch(0 0 0); /* Black */
+  --background: oklch(1 0 0) /* Dark background */
+  --foreground: oklch(1 0 0); /* White */
   --card: oklch(0.94 0 0); /* Light gray for cards */
   --card-foreground: oklch(0 0 0); /* Black text on cards */
   --popover: oklch(1 0 0); /* White */
@@ -43,7 +42,7 @@
 
 .dark {
   /* Updated dark mode colors to maintain brand consistency */
-  --background: oklch(0.1 0 0); /* Dark background */
+  --background: #2e0409; /* Dark background */
   --foreground: oklch(1 0 0); /* White text */
   --card: oklch(0.15 0 0); /* Dark card background */
   --card-foreground: oklch(1 0 0); /* White text on cards */
@@ -220,7 +219,7 @@
 
 .logoloop--fade::before,
 .logoloop--fade::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   bottom: 0;

@@ -64,17 +64,17 @@ const FeaturedAgent = () => {
             user experiences. Designed to adapt and evolve with your specific needs.
           </p>
         </div>
-        <div className="flex mt-8 gap-x-6 mx-auto gap-y-8 flex-col-reverse md:flex-row">
+        <div className="flex mt-8 gap-x-6 mx-auto gap-y-8 flex-col-reverse md:flex-row text-center bg-foreground/5 border-border text-foreground hover:shadow-lg shadow-white backdrop-blur-sm">
           {/* Left Content */}
           <div
             ref={detailCardRef}
-            className="bg-card text-card-foreground basis-8/12 self-start sticky top-36 shadow-xl border border-border rounded-xl py-16 px-6"
+            className="bg-foreground/5 text-card-foreground basis-8/12 self-start sticky top-36 shadow-xl border border-border rounded-xl py-16 px-6 "
           >
-            <h4 className="text-primary font-medium mt-6 lg:mt-0">Specialized AI Agents</h4>
+            <h4 className="text-[#2e0409] font-medium mt-6 lg:mt-0">Specialized AI Agents</h4>
             <h2 className="font-bold text-foreground text-2xl">{selecteditemdata?.header}</h2>
             <p className="text-base mt-3 text-foreground">{selecteditemdata?.desc}</p>
             <Link href="/contact">
-              <button className="text-xl mt-8 px-6 py-3 bg-primary text-primary-foreground rounded-full hover:bg-primary/90 transition-all duration-300 flex items-center gap-x-2">
+              <button className="text-xl mt-8 px-6 py-3 bg-[#2e0409] text-primary-foreground rounded-full hover:bg-primary/90 transition-all duration-300 flex items-center gap-x-2">
                 View Details
                 <ArrowRight className="text-lg" />
               </button>
