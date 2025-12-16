@@ -24,7 +24,7 @@ export default function HomePage() {
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Why Choose Altertec?</h2>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8 max-w-5xl mx-auto">
-            <Card className="text-center bg-foreground/5 border-border text-foreground hover:shadow-lg shadow-white backdrop-blur-sm">
+            <Card className="card-hover text-center bg-card border-border text-foreground">
               <CardHeader>
                 <Target className="h-12 w-12  mx-auto mb-4" />
                 <CardTitle className="text-foreground">ROI-driven implementation</CardTitle>
@@ -36,7 +36,7 @@ export default function HomePage() {
               </CardContent>
             </Card>
 
-            <Card className="text-center bg-foreground/5 border-border text-foreground hover:shadow-lg shadow-white backdrop-blur-sm">
+            <Card className="card-hover text-center bg-card border-border text-foreground">
               <CardHeader>
                 <Zap className="h-12 w-12  mx-auto mb-4" />
                 <CardTitle className="text-foreground">Simple adoption process</CardTitle>
@@ -48,7 +48,7 @@ export default function HomePage() {
               </CardContent>
             </Card>
 
-            <Card className="text-center bg-foreground/5 border-border text-foreground hover:shadow-lg shadow-white backdrop-blur-sm">
+            <Card className="card-hover text-center bg-card border-border text-foreground">
               <CardHeader>
                 <Users className="h-12 w-12  mx-auto mb-4" />
                 <CardTitle className="text-foreground">Long-term strategic partnership</CardTitle>
@@ -80,7 +80,7 @@ export default function HomePage() {
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <Card className="hover:shadow-lg transition-shadow hover:shadow-white bg-foreground/5">
+            <Card className="card-hover bg-card">
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
                   <CheckCircle className="h-5 w-5  " />
@@ -91,7 +91,7 @@ export default function HomePage() {
                 <CardDescription>Identify inefficiencies &amp; high-ROI opportunities</CardDescription>
               </CardContent>
             </Card>
-            <Card className="hover:shadow-lg transition-shadow hover:shadow-white bg-foreground/5">
+            <Card className="card-hover bg-card">
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
                   <Zap className="h-5 w-5 " />
@@ -102,7 +102,7 @@ export default function HomePage() {
                 <CardDescription>Streamline operations with AI-powered workflows</CardDescription>
               </CardContent>
             </Card>
-            <Card className="hover:shadow-lg transition-shadow hover:shadow-white bg-foreground/5">
+            <Card className="card-hover bg-card">
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
                   <Users className="h-5 w-5 " />
@@ -113,7 +113,7 @@ export default function HomePage() {
                 <CardDescription>Enhance customer experience</CardDescription>
               </CardContent>
             </Card>
-            <Card className="hover:shadow-lg transition-shadow hover:shadow-white bg-foreground/5">
+            <Card className="card-hover bg-card">
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
                   <TrendingUp className="h-5 w-5 " />
@@ -124,7 +124,7 @@ export default function HomePage() {
                 <CardDescription>Build scalable, AI-powered software</CardDescription>
               </CardContent>
             </Card>
-            <Card className="hover:shadow-lg transition-shadow hover:shadow-white bg-foreground/5">
+            <Card className="card-hover bg-card">
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
                   <Target className="h-5 w-5 " />
@@ -135,7 +135,7 @@ export default function HomePage() {
                 <CardDescription>Educate teams &amp; build AI roadmaps</CardDescription>
               </CardContent>
             </Card>
-            <Card className="hover:shadow-lg transition-shadow hover:shadow-white bg-foreground/5">
+            <Card className="card-hover bg-card">
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
                   <Clock className="h-5 w-5 " />
@@ -165,7 +165,7 @@ export default function HomePage() {
             <p className="text-lg text-foreground mb-12 text-pretty">
               Ready to explore AI transformation for your business? Contact us today to book your free audit.
             </p>
-            <Card className="bg-foreground/5">
+            <Card className="bg-card">
               <CardContent className="p-8 ">
                 <form className="space-y-6">
                   <div className="grid md:grid-cols-2 gap-4">
@@ -176,7 +176,7 @@ export default function HomePage() {
                       <input
                         id="name"
                         type="text"
-                        className="w-full px-3 py-2 border border-white rounded-md bg-foreground/5 text-white "
+                        className="w-full px-3 py-2 border border-border rounded-md bg-input text-foreground "
                         required
                       />
                     </div>
@@ -187,7 +187,7 @@ export default function HomePage() {
                       <input
                         id="company"
                         type="text"
-                        className="w-full px-3 py-2 border border-white rounded-md bg-foreground/5 text-white"
+                        className="w-full px-3 py-2 border border-border rounded-md bg-input text-foreground"
                         required
                       />
                     </div>
@@ -199,7 +199,7 @@ export default function HomePage() {
                     <input
                       id="email"
                       type="email"
-                      className="w-full px-3 py-2 border border-white rounded-md bg-foreground/5 text-white"
+                      className="w-full px-3 py-2 border border-border rounded-md bg-input text-foreground"
                       required
                     />
                   </div>
@@ -210,11 +210,11 @@ export default function HomePage() {
                     <textarea
                       id="message"
                       rows={4}
-                      className="w-full px-3 py-2 border border-white rounded-md bg-foreground/5 text-white"
+                      className="w-full px-3 py-2 border border-border rounded-md bg-input text-foreground"
                       placeholder="Tell us about your business and AI goals..."
                     />
                   </div>
-                  <Button type="submit" size="lg" className="w-full bg-[#2e0409] hover:bg-white hover:text-[#2e0409] ">
+                  <Button type="submit" size="lg" className="w-full bg-primary hover:bg-primary/90">
                     Book Free AI Audit
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>

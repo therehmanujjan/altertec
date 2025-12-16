@@ -1,7 +1,6 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
-import { ThemeToggle } from "@/components/theme-toggle"
 import Link from "next/link"
 import { useState } from "react"
 import { Menu, X } from "lucide-react"
@@ -48,9 +47,6 @@ export default function Navigation() {
           </div>
 
           <div className="flex items-center space-x-4">
-          {/*
-            <ThemeToggle />
-*/}
             <Button asChild className="hidden sm:inline-flex bg-foreground/5">
               <Link href="/contact">Book Free AI Audit</Link>
             </Button>

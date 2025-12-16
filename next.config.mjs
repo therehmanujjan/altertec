@@ -9,6 +9,7 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  reactStrictMode: true, // Enable React strict mode for debugging hydration mismatches
 }
 
 export default nextConfig

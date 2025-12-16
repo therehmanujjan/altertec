@@ -68,18 +68,17 @@ export default function AltertecHero({ logoSrc = "/logo1.png" }: AltertecHeroPro
       />
 
       {/* Global dim overlay for readability over video */}
-      <div className="absolute inset-0 bg-black/55" aria-hidden="true" />
-      <div className="absolute inset-0 bg-black/40" aria-hidden="true" />
+      <div className="absolute inset-0 bg-black/50" aria-hidden="true" />
 
       <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
-        <div className="inline-flex items-center gap-2 bg-white/5 backdrop-blur-sm border border-white/10 rounded-full px-4 py-2 mb-8 mt-12">
+        <div className="inline-flex items-center gap-2 bg-card/50 backdrop-blur-md border border-border rounded-full px-4 py-2 mb-8 mt-12">
           <span className="w-2 h-2 bg-orange-500 rounded-full animate-pulse" />
-          <span className="text-sm text-gray-300">AI Transformation for SMEs</span>
+          <span className="text-sm text-muted-foreground">AI Transformation for SMEs</span>
         </div>
 
         <h1 className="text-6xl md:text-8xl font-bold mb-6 leading-tight">
           Transform Your
-          <span className="block bg-gradient-to-r from-[#2e0409] to-red-500 bg-clip-text text-transparent">
+          <span className="block bg-gradient-to-r from-red-900 via-red-600 to-red-500 bg-clip-text text-transparent">
             Business with AI
           </span>
         </h1>
@@ -91,7 +90,7 @@ export default function AltertecHero({ logoSrc = "/logo1.png" }: AltertecHeroPro
           <button
             type="button"
             onClick={() => router.push("/process")}
-            className="group border-white bg-[#2e0409] hover:bg-[#2e0409] px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 hover:scale-105 flex items-center gap-2"
+            className="group border border-primary bg-background hover:bg-primary/10 px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 hover:scale-105 flex items-center gap-2"
           >
             Start Free AI Audit
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -99,7 +98,7 @@ export default function AltertecHero({ logoSrc = "/logo1.png" }: AltertecHeroPro
           <button
             type="button"
             onClick={() => router.push("/contact")}
-            className="bg-[#2e0409] backdrop-blur-sm border border-white/10 hover:bg-[#2e0409]/5 px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300"
+            className="bg-card/50 backdrop-blur-md border border-border hover:border-primary/30 hover:bg-card px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300"
             aria-label="See how it works"
           >
             See How It Works
@@ -120,7 +119,7 @@ export default function AltertecHero({ logoSrc = "/logo1.png" }: AltertecHeroPro
             pauseOnHover
             scaleOnHover
             fadeOut
-            fadeOutColor="#ffffff"
+            fadeOutColor="#0f0f0f"
             ariaLabel="Technology partners"
           />
         </div>
