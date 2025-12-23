@@ -1,15 +1,43 @@
-"use client"
+"use client";
 
-import { Button } from "@/components/ui/button"
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
-import Link from "next/link"
-import { useState } from "react"
-import { Menu } from "lucide-react"
-import { NAVIGATION } from "@/lib/constants"
-import { motion } from "framer-motion"
+import { Button } from "@/components/ui/button";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import Link from "next/link";
+import { useState, useEffect } from "react";
+import { Menu, LogIn, LogOut } from "lucide-react";
+import { NAVIGATION } from "@/lib/constants";
+import { motion } from "framer-motion";
+import { useRouter } from "next/navigation";
 
 export default function Navigation() {
-  const [isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false);
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const router = useRouter();
+
+  useEffect(() => {
+    checkAuth();
+  }, []);
+
+  const checkAuth = async () => {
+    try {
+      const response = await fetch("/api/auth/session");
+      const data = await response.json();
+      setIsAuthenticated(data.authenticated);
+    } catch (error) {
+      setIsAuthenticated(false);
+    }
+  };
+
+  const handleLogout = async () => {
+    try {
+      await fetch("/api/auth/logout", { method: "POST" });
+      setIsAuthenticated(false);
+      router.push("/");
+      router.refresh();
+    } catch (error) {
+      console.error("Logout failed:", error);
+    }
+  };
 
   return (
     <motion.nav
@@ -21,7 +49,10 @@ export default function Navigation() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-2 hover:opacity-80 transition-opacity">
+          <Link
+            href="/"
+            className="flex items-center space-x-2 hover:opacity-80 transition-opacity"
+          >
             <img src="/logo1.png" alt="Altertec AI" className="h-8 w-auto" />
           </Link>
 
@@ -39,8 +70,28 @@ export default function Navigation() {
           </div>
 
           {/* Desktop CTA */}
-          <div className="hidden md:flex items-center">
-            <Button asChild className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold">
+          <div className="hidden md:flex items-center gap-3">
+            {isAuthenticated ? (
+              <Button
+                onClick={handleLogout}
+                variant="outline"
+                className="font-semibold"
+              >
+                <LogOut className="h-4 w-4 mr-2" />
+                Logout
+              </Button>
+            ) : (
+              <Button asChild variant="outline" className="font-semibold">
+                <Link href="/login">
+                  <LogIn className="h-4 w-4 mr-2" />
+                  Login
+                </Link>
+              </Button>
+            )}
+            <Button
+              asChild
+              className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold"
+            >
               <Link href={NAVIGATION.cta.href}>{NAVIGATION.cta.name}</Link>
             </Button>
           </div>
@@ -65,16 +116,48 @@ export default function Navigation() {
                     {item.name}
                   </Link>
                 ))}
-                <Button asChild className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-semibold mt-4">
-                  <Link href={NAVIGATION.cta.href} onClick={() => setIsOpen(false)}>
-                    {NAVIGATION.cta.name}
-                  </Link>
-                </Button>
+                <div className="space-y-3 mt-4">
+                  {isAuthenticated ? (
+                    <Button
+                      onClick={() => {
+                        handleLogout();
+                        setIsOpen(false);
+                      }}
+                      variant="outline"
+                      className="w-full font-semibold"
+                    >
+                      <LogOut className="h-4 w-4 mr-2" />
+                      Logout
+                    </Button>
+                  ) : (
+                    <Button
+                      asChild
+                      variant="outline"
+                      className="w-full font-semibold"
+                    >
+                      <Link href="/login" onClick={() => setIsOpen(false)}>
+                        <LogIn className="h-4 w-4 mr-2" />
+                        Login
+                      </Link>
+                    </Button>
+                  )}
+                  <Button
+                    asChild
+                    className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-semibold"
+                  >
+                    <Link
+                      href={NAVIGATION.cta.href}
+                      onClick={() => setIsOpen(false)}
+                    >
+                      {NAVIGATION.cta.name}
+                    </Link>
+                  </Button>
+                </div>
               </nav>
             </SheetContent>
           </Sheet>
         </div>
       </div>
     </motion.nav>
-  )
+  );
 }
