@@ -111,7 +111,7 @@ export default function LoginPage() {
                 {loading ? "Logging in..." : "Login"}
               </Button>
               <div className="text-xs text-center text-muted-foreground mt-4">
-                Default credentials: admin / admin123
+                
               </div>
             </form>
           </CardContent>
